@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세일고 과학 탐구 보고서 #002</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 상단 타이틀 영역 -->
+    <header>
+        <div class="header-container">
+            <span class="category">SCIENCE REPORT</span>
+            <h1>세일고 과학 탐구 보고서 #002</h1>
+            <p>실험 진행 과정 및 결과 데이터 상세 보고서입니다.</p>
+        </div>
+    </header>
+
+    <!-- 보고서 이미지 카드 그리드 (로그인 없이 바로 노출) -->
+    <main class="container">
+        <div class="grid-layout">
+            
+            <!-- 카드 1 -->
+            <div class="report-card">
+                <div class="img-wrapper">
+                    <img src="images/page1.png" alt="보고서 1페이지" onclick="openModal(this.src)">
+                </div>
+                <div class="card-info">
+                    <h3>01. 탐구 주제 및 개요</h3>
+                    <p>탐구 목적 및 연구 필요성</p>
+                </div>
+            </div>
+
+            <!-- 카드 2 -->
+            <div class="report-card">
+                <div class="img-wrapper">
+                    <img src="images/page2.png" alt="보고서 2페이지" onclick="openModal(this.src)">
+                </div>
+                <div class="card-info">
+                    <h3>02. 실험 설계 및 과정</h3>
+                    <p>실험 가설 설정 및 데이터 분석</p>
+                </div>
+            </div>
+
+            <!-- 카드 3 -->
+            <div class="report-card">
+                <div class="img-wrapper">
+                    <img src="images/page3.png" alt="보고서 3페이지" onclick="openModal(this.src)">
+                </div>
+                <div class="card-info">
+                    <h3>03. 결론 및 소감</h3>
+                    <p>최종 데이터 정리 및 결론 도출</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 이미지 클릭 시 크게 나오는 모달(팝업창) -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close-btn">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <!-- 하단 푸터 -->
+    <footer>
+        <p>© 2026 Seil Science Exploration. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
